@@ -4,4 +4,4 @@ class Solution:
         count=total//2
         if low%2==1 and high%2==1:
             count+=1
-        return count    
+        return count
