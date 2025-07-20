@@ -1,4 +1,8 @@
 class Solution:
     def permuteUnique(self, nums: List[int]) -> List[List[int]]:
-        perm = set(itertools.permutations(nums)) 
-        return [list(i) for i in perm]
+        all_perm=itertools.permutations(nums)
+        unique_perm=set(all_perm)
+        li=[]
+        for i in unique_perm:
+            li.append(list(i))
+        return li    
